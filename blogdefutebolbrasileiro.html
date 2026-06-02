@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Futebol Brasileiro</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* HEADER */
+
+header {
+    background-color: #006400;
+    border: 3px solid #FFD700;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* MENU */
+
+nav {
+    background-color: #004d00;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* POSTS */
+
+.post {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.post img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.post h2 {
+    color: #006400;
+}
+
+.author {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.content {
+    color: #2d3748;
+    font-size: 1.1rem;
+}
+
+.btn {
+    margin-top: 15px;
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #008000;
+}
+
+/* TABELA */
+
+.tabela {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.tabela h2 {
+    color: #006400;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #006400;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* CONTATO */
+
+.contato {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.contato h2 {
+    color: #006400;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contato button {
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contato button:hover {
+    background-color: #008000;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li{
+        margin:10px 0;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <h1>⚽ Blog Futebol Brasileiro</h1>
+    <p>Últimas notícias, curiosidades e análises do futebol do Brasil</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Notícias</a></li>
+        <li><a href="#">Classificação</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</nav>
+
+<!-- POST 1 -->
+
+<article class="post">
+    <img src="/home/escola/Downloads/img/download.jpeg" alt="Jogador comemorando gol">
+
+    <h2>Campeonato Brasileiro 2026</h2>
+
+    <div class="author">
+        Por: Endriws Thiago | 01/06/2026
+    </div>
+
+    <p class="content">
+        O Campeonato Brasileiro 2026 promete grandes emoções com clubes tradicionais disputando cada ponto.
+        Acompanhe resultados, destaques e análises semanais aqui no blog!
+    </p>
+
+    <button class="btn">Leia Mais</button>
+</article>
+
+<!-- POST 2 -->
+
+<article class="post">
+    <img src="/home/escola/Downloads/img/download (1).jpeg" alt="Torcida animada">
+
+    <h2>Os maiores clássicos do futebol brasileiro</h2>
+
+    <div class="author">
+        Por: Endriws Thiago | 28/05/2026
+    </div>
+
+    <p class="content">
+        Descubra os clássicos mais emocionantes do Brasil, onde rivalidades históricas e partidas memoráveis marcam a memória dos torcedores.
+    </p>
+
+    <button class="btn">Leia Mais</button>
+</article>
+
+<!-- POST 3 -->
+
+<article class="post">
+    <img src="/home/escola/Downloads/img/download (3).jpeg" alt="Estádio lotado">
+
+    <h2>Jogadores em destaque</h2>
+
+    <div class="author">
+        Por: Endriws Thiago | 25/05/2026
+    </div>
+
+    <p class="content">
+        Conheça os jogadores que estão brilhando nesta temporada e suas histórias dentro e fora dos gramados.
+    </p>
+
+    <button class="btn">Leia Mais</button>
+</article>
+
+<!-- TABELA -->
+
+<section class="tabela">
+
+<h2>Tabela Simulada do Brasileirão</h2>
+
+<table>
+
+<tr>
+<th>Posição</th>
+<th>Clube</th>
+<th>Pontos</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Palmeiras</td>
+<td>41</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Flamengo</td>
+<td>34</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Fluminense</td>
+<td>31</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Athletico-PR</td>
+<td>30</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Bragantino</td>
+<td>29</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- CONTATO -->
+
+<section class="contato">
+
+<h2>Entre em Contato</h2>
+
+<form>
+
+<input type="text" placeholder="Seu nome" required>
+
+<input type="email" placeholder="Seu e-mail" required>
+
+<textarea rows="5" placeholder="Digite sua mensagem"></textarea>
+
+<button type="submit">
+Enviar Mensagem
+</button>
+
+</form>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 Blog Futebol Brasileiro |
+        Desenvolvido por Endriws Thiago
+    </p>
+</footer>
+
+</div>
+
+</body>
+</html>
